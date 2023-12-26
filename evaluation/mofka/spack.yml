@@ -1,0 +1,15 @@
+spack:
+  specs:
+  - cmake
+  - pkg-config
+  - mochi-thallium
+  - mochi-ssg
+  - mofka@0.0.1
+  - py-mochi-margo
+  - py-pip
+  concretizer:
+    unify: true
+  modules:
+    prefix_inspections:
+      lib: [LD_LIBRARY_PATH]
+      lib64: [LD_LIBRARY_PATH]
