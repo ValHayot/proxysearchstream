@@ -1,3 +1,6 @@
 .proxies
 .python-version
 **/__pycache__
+**/build
+**/mofka.ssg
+**/CMakeLists.txt

@@ -23,7 +23,7 @@ RUN . ~/spack/share/spack/setup-env.sh \
     && spack repo add /root/mochi-spack-packages \
     && spack compiler find \
     && spack install \
-    && pip install proxystore[all] kafka-python
+    && pip install proxystore[all] kafka-python globus-compute-endpoint diaspora-event-sdk
 
 RUN apt-get install openjdk-11-jdk -y \
     && wget https://downloads.apache.org/kafka/3.6.1/kafka_2.13-3.6.1.tgz \
